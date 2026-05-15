@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Lab Group Project</title>
+
+    <!-- Favicon (Icon Image) -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4144/4144513.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            color: #333;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 60px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #1565c0;
+            padding-bottom: 5px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .card {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1565c0;
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img style="border-radius:30px" src="data:image/png;base64,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" alt="Cloud Icon">
+    <h1>Cloud Computing Lab - Group Project</h1>
+    <p>SEng7232 Fundamentals of Cloud Computing</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👥 Individual</h2>
+        <ul>
+            <li>Eskinder Melese    ID:1600147</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>☁️ Cloud Storage Services Used</h2>
+        <ol>
+            <li>Google Drive</li>
+            <li>OneDrive</li>
+            <li>Dropbox</li>
+            <li>Sync</li>
+            <li>MEGA</li>
+        </ol>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Cloud Lab Project | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
